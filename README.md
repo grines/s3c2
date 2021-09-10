@@ -18,3 +18,16 @@ This C2 utilizes an s3 bucket for comms. Constists of a CLI and Payload
 ## Installation
 
 s3c2 is written in golang so its easy to ship around as a binary.
+
+- Grab a tightly scoped aws key limited to read /write a single bucket. This will go into /test/payload.go.
+- Build Payload
+
+- s3c2 cli
+- load AWS creds that has access to the same bucket inside of .aws/credentials
+- select profile with token autocomplete. (s3c2 will list profiles availaible in your .aws/credentials file)
+- choose bucket
+
+# Demo
+
+![](https://github.com/grines/s3c2/blob/main/demo.gif)
+
